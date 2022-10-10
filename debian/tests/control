@@ -1,0 +1,9 @@
+Test-Command: /usr/share/pkg-perl-autopkgtest/build-deps.d/smoke
+Depends: @, libdbi-perl, libtest-deep-perl, perl, procps, mariadb-server, pkg-perl-autopkgtest
+Restrictions: skippable, flaky
+Features: test-name=pkg-perl-autopkgtest-build-deps-mariadb
+
+Test-Command: /usr/share/pkg-perl-autopkgtest/build-deps.d/smoke
+Depends: @, libdbi-perl, libtest-deep-perl, perl, procps, mysql-server (>= 5.7), pkg-perl-autopkgtest
+Restrictions: skippable, skip-not-installable, flaky
+Features: test-name=pkg-perl-autopkgtest-build-deps-mysql
